@@ -126,6 +126,7 @@ public class Main extends Activity {
         final Button soundButton = (Button) findViewById(viewId);
         soundButton.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View v) {
+                mSoundManager.stopAll();
         		mSoundManager.playSound(soundNumber);
         	}
         });
