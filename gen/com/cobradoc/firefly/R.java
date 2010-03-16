@@ -14,9 +14,11 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int badIdeasound=0x7f060004;
-        public static final int boatsound=0x7f060005;
-        public static final int bountyhuntersound=0x7f060006;
+        public static final int alarma=0x7f060002;
+        public static final int awaya=0x7f060003;
+        public static final int badideaa=0x7f060004;
+        public static final int boata=0x7f060005;
+        public static final int bountyhuntera=0x7f060006;
         public static final int browmopa=0x7f060007;
         public static final int bugsa=0x7f060008;
         public static final int carea=0x7f060009;
@@ -34,7 +36,6 @@ public final class R {
         public static final int insanea=0x7f060015;
         public static final int jaila=0x7f060016;
         public static final int joba=0x7f060017;
-        public static final int jubalAway=0x7f060003;
         public static final int kidnapa=0x7f060018;
         public static final int knifea=0x7f060019;
         public static final int liona=0x7f06001a;
@@ -59,7 +60,6 @@ public final class R {
         public static final int tablelayout1=0x7f060001;
         public static final int themea=0x7f06002c;
         public static final int thinkinga=0x7f06002d;
-        public static final int washAlarm=0x7f060002;
         public static final int waya=0x7f06002e;
         public static final int witcha=0x7f06002f;
         public static final int workworka=0x7f060030;
