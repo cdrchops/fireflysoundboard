@@ -1,6 +1,7 @@
 package com.cobradoc.firefly;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -32,4 +33,11 @@ public class SoundManager {
 	     int streamVolume = mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
 	     mSoundPool.play(mSoundPoolMap.get(index), streamVolume, streamVolume, 1, -1, 1f);
 	}
+
+    public void stopAll() {
+        for (Integer inter : mSoundPoolMap.keySet()) {
+            mSoundPool.stop(mSoundPoolMap.get(inter));
+        }
+
+    }
 }
