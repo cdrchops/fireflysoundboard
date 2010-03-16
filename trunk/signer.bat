@@ -1,6 +1,7 @@
-rem keytool -genkey -v -keystore mykey.keystore -alias alias_name -keyalg RSA -validity 10000
+keytool -genkey -v -keystore mykey.keystore -validity 20000
+rem -alias alias_name -keyalg RSA 
 
-rem jarsigner -verbose -keystore mykey.keystore build/src/fireflysounds.apk fireflysounds
+jarsigner -verbose -keystore mykey.keystore build/src/fireflysounds.apk fireflysounds
 
 rem jarsigner -verify build/src/fireflysounds.apk
 
