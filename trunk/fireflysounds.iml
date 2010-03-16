@@ -3,7 +3,7 @@
   <component name="FacetManager">
     <facet type="android" name="Android">
       <configuration>
-        <option name="PLATFORM_NAME" value="Android 2.1 Platform(9)" />
+        <option name="PLATFORM_NAME" value="Android 1.5 Google APIs" />
         <option name="USE_CUSTOM_GEN_FOLDER" value="false" />
         <option name="CUSTOM_GEN_FOLDER_RELATIVE_PATH" value="" />
       </configuration>
@@ -19,7 +19,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Android 2.1 Platform(9)" level="application" />
+    <orderEntry type="library" name="Android 1.5 Platform" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="Android 1.5 Google APIs" level="application" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">
