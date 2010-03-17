@@ -14,14 +14,13 @@ import android.widget.Button;
  * @since Mar 16, 2010 - 10:05:19 AM
  */
 public class Main extends Activity {
-    private SoundManager mSoundManager;
+    private static final SoundManager mSoundManager = new SoundManager();
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        mSoundManager = new SoundManager();
         mSoundManager.initSounds(getBaseContext());
 
         addSound(1, R.raw.alarm, R.id.alarma);
@@ -74,7 +73,7 @@ public class Main extends Activity {
         addSound(48, R.raw.worry, R.id.worrya);
     }
 
-    private void addSound(final int soundNumber, int rawNumber, int viewId) {
+    private void addSound(final int soundNumber, final int rawNumber, final int viewId) {
         mSoundManager.addSound(soundNumber, rawNumber);
         createButton(soundNumber, viewId);
     }
