@@ -66,22 +66,18 @@ public class SoundboardAdapter extends BaseAdapter {
 		}
 	}
 
-    @Override
 	public int getCount() {
 		return board.getSamples().size();
 	}
 
-    @Override
 	public Object getItem(final int position) {
 		return null;
 	}
 
-    @Override
 	public long getItemId(final int position) {
 		return 0;
 	}
 
-    @Override
 	public View getView(final int position, final View convertView, final ViewGroup parent) {
 		try {
 			final Sample sample = board.getSamples().get(position);
@@ -91,7 +87,6 @@ public class SoundboardAdapter extends BaseAdapter {
 				button.setText(sample.getName());
 
 				button.setOnClickListener(new OnClickListener() {
-                    @Override
 					public void onClick(View v) {
 						context.play(sample);
 					}
