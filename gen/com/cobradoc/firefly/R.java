@@ -88,26 +88,24 @@ public final class R {
         public static final int worry=0x7f04002f;
     }
     public static final class string {
-        public static final int AllSounds=0x7f050014;
-        public static final int Book=0x7f050012;
-        public static final int Inara=0x7f050011;
-        public static final int Jayne=0x7f05000a;
-        public static final int JubalEarly=0x7f05000b;
-        public static final int Kaylee=0x7f05000d;
-        public static final int Mal=0x7f050008;
-        public static final int MrUniverse=0x7f050013;
-        public static final int River=0x7f05000f;
-        public static final int Simon=0x7f05000e;
-        public static final int TheOperative=0x7f050010;
-        public static final int Wash=0x7f05000c;
-        public static final int Zoe=0x7f050009;
-        public static final int about_date=0x7f050004;
-        public static final int about_label=0x7f050006;
-        public static final int about_title=0x7f050005;
-        public static final int app_name=0x7f050001;
-        public static final int author=0x7f050003;
-        public static final int hello=0x7f050000;
-        public static final int quit_label=0x7f050007;
-        public static final int worrya=0x7f050002;
+        public static final int AllSounds=0x7f050012;
+        public static final int Book=0x7f050010;
+        public static final int Inara=0x7f05000f;
+        public static final int Jayne=0x7f050008;
+        public static final int JubalEarly=0x7f050009;
+        public static final int Kaylee=0x7f05000b;
+        public static final int Mal=0x7f050006;
+        public static final int MrUniverse=0x7f050011;
+        public static final int River=0x7f05000d;
+        public static final int Simon=0x7f05000c;
+        public static final int TheOperative=0x7f05000e;
+        public static final int Wash=0x7f05000a;
+        public static final int Zoe=0x7f050007;
+        public static final int about_date=0x7f050002;
+        public static final int about_label=0x7f050004;
+        public static final int about_title=0x7f050003;
+        public static final int app_name=0x7f050000;
+        public static final int author=0x7f050001;
+        public static final int quit_label=0x7f050005;
     }
 }
