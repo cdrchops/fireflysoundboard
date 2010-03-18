@@ -1,7 +1,7 @@
 /*
- * Zappenduster Soundboard - a soundboard for geeks.
+ * Firefly Soundboard - a soundboard for Firefly and Serenity.
  *
- * Copyright (c) 2009 Adrian Marte
+ * Copyright (c) 2010 Tim Orr aka StandTrooper
  *
  * This program is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published by
@@ -19,12 +19,13 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
+
 import com.cobradoc.firefly.Soundboard;
 
 public class AllSounds extends Soundboard {
 
 	public AllSounds() {
-		super("All your base");
+		super("All Sounds");
 		initialize();
 	}
 
