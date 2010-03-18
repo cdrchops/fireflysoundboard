@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, Lop!</string>
     <string name="app_name">Firefly and Serenity Soundboard</string>
-    <string name="worrya">Wash - worry</string>
     <string name="author">StandTrooper</string>
     <string name="about_date">17Mar2010</string>
     <string name="about_title">About Firefly Soundboard</string>
