@@ -104,8 +104,10 @@ public class FireflySoundboard extends Activity {
             player.release();
             player = null;
         }
+        
+        
     }
-
+    
     @Override
     public boolean onCreateOptionsMenu(final Menu menu) {
         super.onCreateOptionsMenu(menu);
