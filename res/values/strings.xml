@@ -2,4 +2,23 @@
 <resources>
     <string name="hello">Hello World, Lop!</string>
     <string name="app_name">Firefly and Serenity Soundboard</string>
+    <string name="worrya">Wash - worry</string>
+    <string name="author">StandTrooper</string>
+    <string name="about_date">17Mar2010</string>
+    <string name="about_title">About Firefly Soundboard</string>
+    <string name="about_label">About</string>
+    <string name="quit_label">Quit</string>
+    <string name="Mal">Mal</string>
+    <string name="Zoe">Zoe</string>
+    <string name="Jayne">Jayne</string>
+    <string name="JubalEarly">Jubal Early</string>
+    <string name="Wash">Wash</string>
+    <string name="Kaylee">Kaylee</string>
+    <string name="Simon">Simon</string>
+    <string name="River">River</string>
+    <string name="TheOperative">TheOperative</string>
+    <string name="Inara">Inara</string>
+    <string name="Book">Book</string>
+    <string name="MrUniverse">Mr Universe</string>
+    <string name="AllSounds">All Sounds</string>
 </resources>
