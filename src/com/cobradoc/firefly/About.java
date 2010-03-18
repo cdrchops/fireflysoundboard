@@ -1,7 +1,7 @@
 /*
- * Zappenduster Soundboard - a soundboard for geeks.
+ * Firefly Soundboard - a soundboard for Firefly and Serenity.
  *
- * Copyright (c) 2009 Adrian Marte
+ * Copyright (c) 2010 Tim Orr aka StandTrooper
  *
  * This program is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published by
@@ -18,15 +18,22 @@
  */
 package com.cobradoc.firefly;
 
+import com.cobradoc.firefly.R;
 import android.app.Activity;
 import android.os.Bundle;
 
+/**
+ * The About Dialog to display what this app is about
+ * access via pressing the menu button, then the about submenu
+ *
+ * @author StandTrooper
+ * @since 17Mar2010
+ */
 public class About extends Activity {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about);
 	}
-
 }
