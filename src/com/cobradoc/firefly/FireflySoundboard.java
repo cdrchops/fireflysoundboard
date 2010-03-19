@@ -61,131 +61,16 @@ import com.cobradoc.firefly.board.*;
  */
 public class FireflySoundboard extends Activity {
 
-    private MediaPlayer player;
-    private static int playerValue = R.id.AllSoundsMenu;
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.main);
-        selection(playerValue);
-    }
+        Log.e("tabbed layout", "" + Settings.isTabbedLayout);
 
-    private void createGrid(final Soundboard clazz) {
-        final GridView miscGrid = (GridView) findViewById(R.id.Mal);
-        miscGrid.setAdapter(new SoundboardAdapter(this, clazz));
-    }
-
-    public void prepare(final Sample sample) {
-//		 Do nothing at the moment.
-    }
-
-    public void play(final Sample sample) {
-        Log.v(getClass().getName(), "Playing: " + sample.getName() + " (" + sample.getResId() + ")");
-
-        if (player != null) {
-            player.stop();
-            player.release();
-        }
-
-        player = MediaPlayer.create(this, sample.getResId());
-        player.setVolume(2.0f, 2.0f);
-
-        if (player != null) {
-            player.start();
+        if (Settings.isTabbedLayout) {
+            startActivity(new Intent(this, TabbedLayout.class));
+        } else {
+            startActivity(new Intent(this, MainLayout.class));
         }
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        if (player != null) {
-            player.release();
-            player = null;
-        }
-        
-        
-    }
-    
-    @Override
-    public boolean onCreateOptionsMenu(final Menu menu) {
-        super.onCreateOptionsMenu(menu);
-
-        final MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.layout.menu, menu);
-
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(final MenuItem item) {
-        return selection(item.getItemId());
-    }
-    
-    private boolean selection(final int id) {
-    	switch (id) {
-	        case R.id.about:
-	            startActivity(new Intent(this, About.class));
-	            return true;
-	        case R.id.quit:
-	            finish();
-	            return true;
-	        case R.id.AllSoundsMenu:
-	        	playerValue = R.id.AllSoundsMenu;
-	            createGrid(new AllSounds());
-	            return true;
-	        case R.id.MalMenu:
-                playerValue = R.id.MalMenu;
-	            createGrid(new Mal());
-	            return true;
-	        case R.id.ZoeMenu:
-                playerValue = R.id.ZoeMenu;
-	            createGrid(new Zoe());
-	            return true;
-	        case R.id.JubalEarlyMenu:
-                playerValue = R.id.JubalEarlyMenu;
-	            createGrid(new JubalEarly());
-	            return true;
-	        case R.id.JayneMenu:
-                playerValue = R.id.JayneMenu;
-	            createGrid(new Jayne());
-	            return true;
-	        case R.id.WashMenu:
-                playerValue = R.id.WashMenu;
-	            createGrid(new Wash());
-	            return true;
-	        case R.id.KayleeMenu:
-                playerValue = R.id.KayleeMenu;
-	            createGrid(new Kaylee());
-	            return true;
-	        case R.id.RiverMenu:
-                playerValue = R.id.RiverMenu;
-	            createGrid(new River());
-	            return true;
-	        case R.id.SimonMenu:
-                playerValue = R.id.SimonMenu;
-	            createGrid(new Simon());
-	            return true;
-	        case R.id.BookMenu:
-                playerValue = R.id.BookMenu;
-	            createGrid(new Book());
-	            return true;
-	//         case R.id.MrUniverseMenu:
-//            playerValue = R.id.MrUniverseMenu;
-	//            createGrid(new MrUniverse());
-	//             return true;
-	        case R.id.InaraMenu:
-                playerValue = R.id.InaraMenu;
-	            createGrid(new Inara());
-	            return true;
-	//         case R.id.TheOperativeMenu:
-//            playerValue = R.id.TheOperativeMenu;
-	//            createGrid(new TheOperative());
-	//             return true;
-	    }
-
-    	return false;
-    }
-
 }
