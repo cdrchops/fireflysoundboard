@@ -19,4 +19,6 @@
     <string name="Book">Book</string>
     <string name="MrUniverse">Mr Universe</string>
     <string name="AllSounds">All Sounds</string>
+    <string name="settings_label">Settings</string>
+    <string name="settings_title">Settings</string>
 </resources>
