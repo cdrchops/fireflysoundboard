@@ -3,21 +3,17 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
-    <LinearLayout android:orientation="vertical"
+    <FrameLayout android:id="@android:id/tabcontent"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+        <GridView android:id="@+id/Mal"
                   android:layout_width="fill_parent"
-                  android:layout_height="fill_parent">
-        <FrameLayout android:id="@android:id/tabcontent"
-                     android:layout_width="fill_parent"
-                     android:layout_height="fill_parent">
-            <GridView android:id="@+id/Mal"
-                      android:layout_width="fill_parent"
-                      android:layout_height="fill_parent"
-                      android:padding="5dp"
-                      android:verticalSpacing="5dp"
-                      android:horizontalSpacing="5dp"
-                      android:numColumns="2"
-                      android:stretchMode="columnWidth"
-                      android:gravity="center"/>
-        </FrameLayout>
-    </LinearLayout>
+                  android:layout_height="fill_parent"
+                  android:padding="5dp"
+                  android:verticalSpacing="5dp"
+                  android:horizontalSpacing="5dp"
+                  android:numColumns="2"
+                  android:stretchMode="columnWidth"
+                  android:gravity="center"/>
+    </FrameLayout>
 </LinearLayout>

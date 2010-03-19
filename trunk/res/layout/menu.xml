@@ -3,6 +3,9 @@
     <item android:id="@+id/about"
           android:title="@string/about_label"
           android:icon="@android:drawable/ic_menu_info_details"/>
+    <item android:id="@+id/settings"
+          android:title="@string/settings_label"
+          android:icon="@drawable/compass"/>
     <item android:id="@+id/AllSoundsMenu"
           android:title="@string/AllSounds"/>
     <item android:id="@+id/MalMenu"
@@ -27,6 +30,7 @@
     <item android:id="@+id/InaraMenu"
           android:title="@string/Inara"/>
     <!--<item android:id="@+id/TheOperativeMenu" android:title="@string/TheOperative" />-->
+
     <item android:id="@+id/quit"
           android:title="@string/quit_label"
           android:icon="@android:drawable/ic_menu_close_clear_cancel"/>
