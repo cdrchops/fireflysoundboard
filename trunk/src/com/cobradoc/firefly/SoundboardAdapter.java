@@ -47,11 +47,11 @@ import android.widget.Button;
 
 public class SoundboardAdapter extends BaseAdapter {
 
-	final FireflySoundboard context;
+	final BaseLayout context;
 
 	final Soundboard board;
 
-	public SoundboardAdapter(final FireflySoundboard context, final Soundboard board) {
+	public SoundboardAdapter(final BaseLayout context, final Soundboard board) {
 		this.context = context;
 		this.board = board;
 
