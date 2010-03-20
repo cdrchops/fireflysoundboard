@@ -19,7 +19,6 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 /**
@@ -28,12 +27,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class River extends Soundboard {
 
-	public River() {
-		super("River Tamm");
-		initialize();
-	}
+    public River() {
+        super("River Tamm");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         addSample("very crowded", R.raw.crowded);
         addSample("You got issues", R.raw.early);
         addSample("It's just an object", R.raw.object);

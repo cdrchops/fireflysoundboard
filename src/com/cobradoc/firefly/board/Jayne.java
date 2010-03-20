@@ -19,7 +19,6 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 /**
@@ -28,12 +27,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class Jayne extends Soundboard {
 
-	public Jayne() {
-		super("Jayne Cobb");
-		initialize();
-	}
+    public Jayne() {
+        super("Jayne Cobb");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         addSample("Kaylee cheerful", R.raw.cheerful);
         addSample("Not Jaynes fault", R.raw.fault);
         addSample("can't get paid if you're dead", R.raw.nothing);

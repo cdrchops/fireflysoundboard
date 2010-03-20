@@ -19,7 +19,6 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 /**
@@ -28,12 +27,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class Inara extends Soundboard {
 
-	public Inara() {
-		super("Inara");
-		initialize();
-	}
+    public Inara() {
+        super("Inara");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         addSample("You'll be fine", R.raw.fine);
     }
 }

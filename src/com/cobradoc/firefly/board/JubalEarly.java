@@ -19,7 +19,6 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 /**
@@ -28,12 +27,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class JubalEarly extends Soundboard {
 
-	public JubalEarly() {
-		super("Jubal Early");
-		initialize();
-	}
+    public JubalEarly() {
+        super("Jubal Early");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         addSample("Put the gun away", R.raw.away);
         addSample("nonsensical crap", R.raw.boat);
         addSample("No, I'm a bounty hunter", R.raw.bountyhunter);

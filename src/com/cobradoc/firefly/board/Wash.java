@@ -19,7 +19,6 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 /**
@@ -28,12 +27,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class Wash extends Soundboard {
 
-	public Wash() {
-		super("Hoban Washburn");
-		initialize();
-	}
+    public Wash() {
+        super("Hoban Washburn");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         addSample("we're being followed", R.raw.alarm);
         addSample("brow mopper", R.raw.browmop);
         addSample("Here's something you can't do", R.raw.something);

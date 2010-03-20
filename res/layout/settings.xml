@@ -24,6 +24,11 @@
                       android:layout_width="fill_parent"
                       android:layout_height="wrap_content"
                       android:text="Display As Tabs"/>
+            <Button android:id="@+id/tabbedButton"
+                      android:checked="false"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Close Settings"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -26,12 +26,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class TheOperative extends Soundboard {
 
-	public TheOperative() {
-		super("The Operative");
-		initialize();
-	}
+    public TheOperative() {
+        super("The Operative");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
 
     }
 
