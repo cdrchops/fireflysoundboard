@@ -19,17 +19,16 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 public class AllSounds extends Soundboard {
 
-	public AllSounds() {
-		super("All Sounds");
-		initialize();
-	}
+    public AllSounds() {
+        super("All Sounds");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         //Mal
         addSample("This is a bad idea", R.raw.badidea);
         addSample("No touching guns", R.raw.guns);
@@ -98,5 +97,5 @@ public class AllSounds extends Soundboard {
         addSample("Half a hump", R.raw.putyou);
 
         addSample("Firefly theme song", R.raw.theme);
-	}
+    }
 }

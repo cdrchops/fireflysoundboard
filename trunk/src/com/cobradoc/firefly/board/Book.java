@@ -19,7 +19,6 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 /**
@@ -28,12 +27,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class Book extends Soundboard {
 
-	public Book() {
-		super("Shepard Book");
-		initialize();
-	}
+    public Book() {
+        super("Shepard Book");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         addSample("Half a hump", R.raw.putyou);
     }
 }

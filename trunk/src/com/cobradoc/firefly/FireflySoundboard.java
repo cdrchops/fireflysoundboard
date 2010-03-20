@@ -39,19 +39,11 @@ package com.cobradoc.firefly;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.GridView;
-import com.cobradoc.firefly.board.*;
 
 /**
- * This class and code borrows heavily from the Zappenduster soundboard
- * I was headed in the same direction when I found that code, so I borrowed it
- * I have left the original copyrights for Zappenduster in the code and where applicable
+ * This class and code borrows heavily from the Zappenduster soundboard I was headed in the same direction when I found
+ * that code, so I borrowed it I have left the original copyrights for Zappenduster in the code and where applicable
  * added the license for Kaleut Software
  * <p/>
  * The sounds are from http://www.moviesoundclips.net/sound.php?id=70
@@ -65,9 +57,7 @@ public class FireflySoundboard extends Activity {
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.e("tabbed layout", "" + Settings.isTabbedLayout);
-
-        if (Settings.isTabbedLayout) {
+        if (Settings.isTabbedLayout && Settings.showTabOptions) {
             startActivity(new Intent(this, TabbedLayout.class));
         } else {
             startActivity(new Intent(this, MainLayout.class));

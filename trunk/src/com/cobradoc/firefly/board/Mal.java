@@ -19,7 +19,6 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 /**
@@ -28,12 +27,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class Mal extends Soundboard {
 
-	public Mal() {
-		super("Malcom Reynolds");
-		initialize();
-	}
+    public Mal() {
+        super("Malcom Reynolds");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         addSample("This is a bad idea", R.raw.badidea);
         addSample("No touching guns", R.raw.guns);
         addSample("Big Damn Heroes", R.raw.heroes);

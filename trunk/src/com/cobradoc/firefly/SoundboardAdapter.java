@@ -36,68 +36,68 @@
  */
 package com.cobradoc.firefly;
 
-import java.util.List;
-
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 
+import java.util.List;
+
 public class SoundboardAdapter extends BaseAdapter {
 
-	final BaseLayout context;
+    final BaseLayout context;
 
-	final Soundboard board;
+    final Soundboard board;
 
-	public SoundboardAdapter(final BaseLayout context, final Soundboard board) {
-		this.context = context;
-		this.board = board;
+    public SoundboardAdapter(final BaseLayout context, final Soundboard board) {
+        this.context = context;
+        this.board = board;
 
-		prepare(board);
-	}
+        prepare(board);
+    }
 
-	private void prepare(final Soundboard board) {
-		List<Sample> samples = board.getSamples();
+    private void prepare(final Soundboard board) {
+        List<Sample> samples = board.getSamples();
 
-		for (Sample sample : samples) {
-			context.prepare(sample);
-		}
-	}
+        for (Sample sample : samples) {
+            context.prepare(sample);
+        }
+    }
 
-	public int getCount() {
-		return board.getSamples().size();
-	}
+    public int getCount() {
+        return board.getSamples().size();
+    }
 
-	public Object getItem(final int position) {
-		return null;
-	}
+    public Object getItem(final int position) {
+        return null;
+    }
 
-	public long getItemId(final int position) {
-		return 0;
-	}
+    public long getItemId(final int position) {
+        return 0;
+    }
 
-	public View getView(final int position, final View convertView, final ViewGroup parent) {
-		try {
-			final Sample sample = board.getSamples().get(position);
+    public View getView(final int position, final View convertView, final ViewGroup parent) {
+        try {
+            final Sample sample = board.getSamples().get(position);
 
-			if (sample != null) {
-				final Button button = new Button(context);
-				button.setText(sample.getName());
+            if (sample != null) {
+                final Button button = new Button(context);
+                button.setText(sample.getName());
 
-				button.setOnClickListener(new OnClickListener() {
-					public void onClick(View v) {
-						context.play(sample);
-					}
-				});
+                button.setOnClickListener(new OnClickListener() {
+                    public void onClick(View v) {
+                        context.play(sample);
+                    }
+                });
 
-				return button;
-			}
-		} catch (IndexOutOfBoundsException e) {
-			Log.e(getClass().getCanonicalName(), "No sample at position " + position);
-		}
+                return button;
+            }
+        } catch (IndexOutOfBoundsException e) {
+            Log.e(getClass().getCanonicalName(), "No sample at position " + position);
+        }
 
-		return null;
-	}
+        return null;
+    }
 }

@@ -18,22 +18,20 @@
  */
 package com.cobradoc.firefly;
 
-import com.cobradoc.firefly.R;
 import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * The About Dialog to display what this app is about
- * access via pressing the menu button, then the about submenu
+ * The About Dialog to display what this app is about access via pressing the menu button, then the about submenu
  *
  * @author StandTrooper
  * @since 17Mar2010
  */
 public class About extends Activity {
 
-	@Override
-	protected void onCreate(final Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.about);
-	}
+    @Override
+    protected void onCreate(final Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.about);
+    }
 }

@@ -19,7 +19,6 @@
 package com.cobradoc.firefly.board;
 
 import com.cobradoc.firefly.R;
-
 import com.cobradoc.firefly.Soundboard;
 
 /**
@@ -28,12 +27,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class Zoe extends Soundboard {
 
-	public Zoe() {
-		super("Zoe");
-		initialize();
-	}
+    public Zoe() {
+        super("Zoe");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
         addSample("We should be in Jail", R.raw.jail);
         addSample("wacky fun", R.raw.knife);
         addSample("work work work", R.raw.workwork);

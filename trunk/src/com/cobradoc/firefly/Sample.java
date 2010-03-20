@@ -37,26 +37,25 @@
 package com.cobradoc.firefly;
 
 /**
- *
  * @author Adrian Marte
  * @since 2009
  */
 public class Sample {
 
-	private String text;
+    private String text;
 
-	private int resId;
+    private int resId;
 
-	public Sample(final String text, final int resId) {
-		this.text = text;
-		this.resId = resId;
-	}
+    public Sample(final String text, final int resId) {
+        this.text = text;
+        this.resId = resId;
+    }
 
-	public String getName() {
-		return text;
-	}
+    public String getName() {
+        return text;
+    }
 
-	public int getResId() {
-		return resId;
-	}
+    public int getResId() {
+        return resId;
+    }
 }

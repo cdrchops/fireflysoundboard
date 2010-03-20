@@ -26,12 +26,12 @@ import com.cobradoc.firefly.Soundboard;
  */
 public class MrUniverse extends Soundboard {
 
-	public MrUniverse() {
-		super("Mister Universe");
-		initialize();
-	}
+    public MrUniverse() {
+        super("Mister Universe");
+        initialize();
+    }
 
-	private void initialize() {
+    private void initialize() {
 
     }
 

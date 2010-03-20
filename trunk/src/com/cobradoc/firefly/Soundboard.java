@@ -60,25 +60,25 @@ import java.util.List;
 
 public abstract class Soundboard {
 
-	private String name;
+    private String name;
 
-	private List<Sample> samples = new ArrayList<Sample>();
+    private List<Sample> samples = new ArrayList<Sample>();
 
-	public Soundboard(final String name) {
-		this.name = name;
-	}
+    public Soundboard(final String name) {
+        this.name = name;
+    }
 
-	protected Sample addSample(final String text, final int resId) {
-		final Sample sample = new Sample(text, resId);
-		samples.add(sample);
-		return sample;
-	}
+    protected Sample addSample(final String text, final int resId) {
+        final Sample sample = new Sample(text, resId);
+        samples.add(sample);
+        return sample;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public List<Sample> getSamples() {
-		return samples;
-	}
+    public List<Sample> getSamples() {
+        return samples;
+    }
 }
