@@ -48,16 +48,20 @@ public class BaseLayout extends Activity {
     public void play(final Sample sample) {
         Log.v(getClass().getName(), "Playing: " + sample.getName() + " (" + sample.getResId() + ")");
 
-        if (player != null) {
-            player.stop();
-            player.release();
-        }
+        stop();
 
         player = MediaPlayer.create(this, sample.getResId());
         player.setVolume(2.0f, 2.0f);
 
         if (player != null) {
             player.start();
+        }
+    }
+
+    public void stop() {
+        if (player != null) {
+            player.stop();
+            player.release();
         }
     }
 

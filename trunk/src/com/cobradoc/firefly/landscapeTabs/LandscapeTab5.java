@@ -29,10 +29,9 @@ public class LandscapeTab5 extends Soundboard {
 
     public LandscapeTab5() {
         super("Tab");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("She's a witch", R.raw.witch);
 
         //River
@@ -45,7 +44,5 @@ public class LandscapeTab5 extends Soundboard {
         addSample("The nice man wants to kidnap you", R.raw.kidnap);
         addSample("You're out of your mind", R.raw.mind);
         addSample("River is Serenity", R.raw.serenity);
-
     }
-
 }

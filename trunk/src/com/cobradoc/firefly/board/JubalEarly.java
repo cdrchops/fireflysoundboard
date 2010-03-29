@@ -29,10 +29,9 @@ public class JubalEarly extends Soundboard {
 
     public JubalEarly() {
         super("Jubal Early");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("Put the gun away", R.raw.away);
         addSample("nonsensical crap", R.raw.boat);
         addSample("No, I'm a bounty hunter", R.raw.bountyhunter);

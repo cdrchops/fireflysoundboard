@@ -29,10 +29,9 @@ public class LandscapeTab6 extends Soundboard {
 
     public LandscapeTab6() {
         super("Tab");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("get in a mans way", R.raw.way);
         addSample("don't worry about me", R.raw.worry);
 

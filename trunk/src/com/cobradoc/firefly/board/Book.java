@@ -29,10 +29,9 @@ public class Book extends Soundboard {
 
     public Book() {
         super("Shepard Book");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("Half a hump", R.raw.putyou);
     }
 }

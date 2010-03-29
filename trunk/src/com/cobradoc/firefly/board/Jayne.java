@@ -29,15 +29,15 @@ public class Jayne extends Soundboard {
 
     public Jayne() {
         super("Jayne Cobb");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("Kaylee cheerful", R.raw.cheerful);
         addSample("Not Jaynes fault", R.raw.fault);
         addSample("can't get paid if you're dead", R.raw.nothing);
         addSample("Saint Jayne", R.raw.saintjayne);
         addSample("don't like people hearin what I'm thinkin", R.raw.thinking);
         addSample("She's a witch", R.raw.witch);
+        addSample("I'll be in my bunk", R.raw.inmybunk);
     }
 }

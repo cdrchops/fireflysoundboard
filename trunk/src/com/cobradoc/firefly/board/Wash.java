@@ -29,16 +29,17 @@ public class Wash extends Soundboard {
 
     public Wash() {
         super("Hoban Washburn");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("we're being followed", R.raw.alarm);
         addSample("brow mopper", R.raw.browmop);
         addSample("Here's something you can't do", R.raw.something);
         addSample("The soup thing", R.raw.soup);
         addSample("We live in a spaceship", R.raw.spaceship);
         addSample("How did your brain learn speech", R.raw.speech);
+        addSample("Complete This Land", R.raw.thislandcomplete);
+        addSample("We shall call this land", R.raw.thisland);
+        addSample("inevitable betrayal", R.raw.betrayal);
     }
-
 }

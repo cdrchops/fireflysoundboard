@@ -29,13 +29,11 @@ public class Zoe extends Soundboard {
 
     public Zoe() {
         super("Zoe");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("We should be in Jail", R.raw.jail);
         addSample("wacky fun", R.raw.knife);
         addSample("work work work", R.raw.workwork);
     }
-
 }

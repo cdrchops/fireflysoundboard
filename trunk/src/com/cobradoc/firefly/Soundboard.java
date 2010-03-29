@@ -66,6 +66,7 @@ public abstract class Soundboard {
 
     public Soundboard(final String name) {
         this.name = name;
+        initialize();
     }
 
     protected Sample addSample(final String text, final int resId) {
@@ -81,4 +82,6 @@ public abstract class Soundboard {
     public List<Sample> getSamples() {
         return samples;
     }
+
+    public abstract void initialize();
 }
