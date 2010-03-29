@@ -25,10 +25,9 @@ public class AllSounds extends Soundboard {
 
     public AllSounds() {
         super("All Sounds");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         //Mal
         addSample("This is a bad idea", R.raw.badidea);
         addSample("No touching guns", R.raw.guns);
@@ -37,6 +36,7 @@ public class AllSounds extends Soundboard {
         addSample("We're gonna die", R.raw.pretty);
         addSample("Pain is scary", R.raw.scare);
         addSample("Horses are steak", R.raw.steak);
+        addSample("aim to misbehave", R.raw.aimtomisbehave);
 
         //Wash
         addSample("we're being followed", R.raw.alarm);
@@ -45,6 +45,9 @@ public class AllSounds extends Soundboard {
         addSample("The soup thing", R.raw.soup);
         addSample("We live in a spaceship", R.raw.spaceship);
         addSample("How did your brain learn speech", R.raw.speech);
+        addSample("Complete This Land", R.raw.thislandcomplete);
+        addSample("We shall call this land", R.raw.thisland);
+        addSample("inevitable betrayal", R.raw.betrayal);
 
         //Early
         addSample("Put the gun away", R.raw.away);
@@ -71,6 +74,7 @@ public class AllSounds extends Soundboard {
         addSample("Saint Jayne", R.raw.saintjayne);
         addSample("don't like people hearin what I'm thinkin", R.raw.thinking);
         addSample("She's a witch", R.raw.witch);
+        addSample("I'll be in my bunk", R.raw.inmybunk);
 
         //River
         addSample("very crowded", R.raw.crowded);

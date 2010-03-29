@@ -29,10 +29,9 @@ public class PortraitTab3 extends Soundboard {
 
     public PortraitTab3() {
         super("Tab");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
 
         addSample("You folks are insane", R.raw.insane);
         addSample("Are you a Lion?", R.raw.lion);
@@ -49,5 +48,4 @@ public class PortraitTab3 extends Soundboard {
         addSample("Not Jaynes fault", R.raw.fault);
         addSample("can't get paid if you're dead", R.raw.nothing);
     }
-
 }

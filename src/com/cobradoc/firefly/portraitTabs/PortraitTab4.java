@@ -29,12 +29,9 @@ public class PortraitTab4 extends Soundboard {
 
     public PortraitTab4() {
         super("Tab");
-        initialize();
     }
 
-    private void initialize() {
-
-
+    public void initialize() {
         addSample("Saint Jayne", R.raw.saintjayne);
         addSample("don't like people hearin what I'm thinkin", R.raw.thinking);
         addSample("She's a witch", R.raw.witch);
@@ -49,7 +46,5 @@ public class PortraitTab4 extends Soundboard {
         addSample("The nice man wants to kidnap you", R.raw.kidnap);
         addSample("You're out of your mind", R.raw.mind);
         addSample("River is Serenity", R.raw.serenity);
-
     }
-
 }

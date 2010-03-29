@@ -29,10 +29,9 @@ public class LandscapeTab2 extends Soundboard {
 
     public LandscapeTab2() {
         super("Tab");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("brow mopper", R.raw.browmop);
         addSample("Here's something you can't do", R.raw.something);
         addSample("The soup thing", R.raw.soup);
@@ -43,7 +42,5 @@ public class LandscapeTab2 extends Soundboard {
         addSample("Put the gun away", R.raw.away);
         addSample("nonsensical crap", R.raw.boat);
         addSample("No, I'm a bounty hunter", R.raw.bountyhunter);
-
     }
-
 }

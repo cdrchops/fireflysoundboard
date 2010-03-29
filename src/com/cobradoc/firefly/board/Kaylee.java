@@ -29,10 +29,9 @@ public class Kaylee extends Soundboard {
 
     public Kaylee() {
         super("Kaylee");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("Spacebugs", R.raw.bugs);
         addSample("A-Ok", R.raw.shiny);
     }

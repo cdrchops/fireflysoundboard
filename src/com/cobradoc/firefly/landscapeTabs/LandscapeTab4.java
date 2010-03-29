@@ -29,10 +29,9 @@ public class LandscapeTab4 extends Soundboard {
 
     public LandscapeTab4() {
         super("Tab");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("My gorram ship", R.raw.ship);
 
         //Kaylee
@@ -45,7 +44,5 @@ public class LandscapeTab4 extends Soundboard {
         addSample("can't get paid if you're dead", R.raw.nothing);
         addSample("Saint Jayne", R.raw.saintjayne);
         addSample("don't like people hearin what I'm thinkin", R.raw.thinking);
-
     }
-
 }

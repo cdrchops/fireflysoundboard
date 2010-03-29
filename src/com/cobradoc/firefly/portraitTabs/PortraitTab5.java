@@ -29,12 +29,9 @@ public class PortraitTab5 extends Soundboard {
 
     public PortraitTab5() {
         super("Tab");
-        initialize();
     }
 
-    private void initialize() {
-
-
+    public void initialize() {
         addSample("get in a mans way", R.raw.way);
         addSample("don't worry about me", R.raw.worry);
 
@@ -51,5 +48,4 @@ public class PortraitTab5 extends Soundboard {
 
         addSample("Firefly theme song", R.raw.theme);
     }
-
 }

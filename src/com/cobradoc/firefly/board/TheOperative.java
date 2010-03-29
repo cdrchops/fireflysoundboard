@@ -28,11 +28,9 @@ public class TheOperative extends Soundboard {
 
     public TheOperative() {
         super("The Operative");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
 
     }
-
 }

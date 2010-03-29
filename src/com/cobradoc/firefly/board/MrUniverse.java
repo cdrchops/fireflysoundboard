@@ -28,10 +28,9 @@ public class MrUniverse extends Soundboard {
 
     public MrUniverse() {
         super("Mister Universe");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
 
     }
 

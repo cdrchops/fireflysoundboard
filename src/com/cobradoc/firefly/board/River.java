@@ -29,13 +29,11 @@ public class River extends Soundboard {
 
     public River() {
         super("River Tamm");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("very crowded", R.raw.crowded);
         addSample("You got issues", R.raw.early);
         addSample("It's just an object", R.raw.object);
     }
-
 }

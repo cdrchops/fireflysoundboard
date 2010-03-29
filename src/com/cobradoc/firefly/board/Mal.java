@@ -29,10 +29,9 @@ public class Mal extends Soundboard {
 
     public Mal() {
         super("Malcom Reynolds");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("This is a bad idea", R.raw.badidea);
         addSample("No touching guns", R.raw.guns);
         addSample("Big Damn Heroes", R.raw.heroes);
@@ -40,5 +39,6 @@ public class Mal extends Soundboard {
         addSample("We're gonna die", R.raw.pretty);
         addSample("Pain is scary", R.raw.scare);
         addSample("Horses are steak", R.raw.steak);
+        addSample("aim to misbehave", R.raw.aimtomisbehave);
     }
 }

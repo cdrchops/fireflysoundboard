@@ -29,10 +29,9 @@ public class Inara extends Soundboard {
 
     public Inara() {
         super("Inara");
-        initialize();
     }
 
-    private void initialize() {
+    public void initialize() {
         addSample("You'll be fine", R.raw.fine);
     }
 }
