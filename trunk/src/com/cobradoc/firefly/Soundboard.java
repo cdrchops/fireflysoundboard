@@ -57,6 +57,7 @@ package com.cobradoc.firefly;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.cobradoc.firefly.Sample;
 
 public abstract class Soundboard {
 
@@ -69,7 +70,7 @@ public abstract class Soundboard {
         initialize();
     }
 
-    protected Sample addSample(final String text, final int resId) {
+    public Sample addSample(final String text, final int resId) {
         final Sample sample = new Sample(text, resId);
         samples.add(sample);
         return sample;

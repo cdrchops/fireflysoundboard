@@ -36,7 +36,6 @@
  */
 package com.cobradoc.firefly;
 
-import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
@@ -49,6 +48,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -105,11 +105,10 @@ public class SoundboardAdapter extends BaseAdapter {
                 });
 
                 button.setOnLongClickListener(new View.OnLongClickListener() {
-                    @Override
                     public boolean onLongClick(final View view) {
                         Log.e("soundboard adapter", "pressed the longen clicken");
-                        saveas(sample.getResId());
-
+                        saveas(sample);
+                        Toast.makeText(context, "You have saved the sound " + sample.getName(), Toast.LENGTH_LONG).show();
                         return false;
                     }
                 });
@@ -162,9 +161,11 @@ public class SoundboardAdapter extends BaseAdapter {
         }
     }
 
-    public boolean saveas(int ressound) {
+    public boolean saveas(Sample sample) {
+        final int ressound = sample.getResId();
+        final String name = sample.getName().replaceAll(" ", "").replaceAll("'","").toLowerCase();
         byte[] buffer = null;
-        InputStream fIn = context.getResources().openRawResource(ressound);
+        final InputStream fIn = context.getResources().openRawResource(ressound);
         int size = 0;
 
         try {
@@ -178,10 +179,10 @@ public class SoundboardAdapter extends BaseAdapter {
         }
 
         String path = "/sdcard/media/audio/ringtones/";
-        String filename = "priceringtone" + ".ogg";
+        String filename = name + ".ogg";
 
-        Log.e("saveas1", path + " " + filename);
-        boolean exists = (new File(path)).exists();
+        Log.e("saveas1", path + filename);
+        final boolean exists = (new File(path)).exists();
         if (!exists) {
             new File(path).mkdirs();
         }
@@ -202,13 +203,13 @@ public class SoundboardAdapter extends BaseAdapter {
 
         context.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("file://" + path + filename)));
 
-        File k = new File(path, filename);
+        final File k = new File(path, filename);
 
-        ContentValues values = new ContentValues();
+        final ContentValues values = new ContentValues();
         values.put(MediaStore.MediaColumns.DATA, k.getAbsolutePath());
-        values.put(MediaStore.MediaColumns.TITLE, "exampletitle");
+        values.put(MediaStore.MediaColumns.TITLE, name);
         values.put(MediaStore.MediaColumns.MIME_TYPE, "audio/ogg");
-        values.put(MediaStore.Audio.Media.ARTIST, "cssounds ");
+        values.put(MediaStore.Audio.Media.ARTIST, "Firefly/Serenity");
         values.put(MediaStore.Audio.Media.IS_RINGTONE, true);
         values.put(MediaStore.Audio.Media.IS_NOTIFICATION, true);
         values.put(MediaStore.Audio.Media.IS_ALARM, true);

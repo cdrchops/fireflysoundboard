@@ -21,7 +21,7 @@ import com.cobradoc.firefly.portraitTabs.PortraitTab5;
 import com.cobradoc.util.DisplayUtil;
 
 /**
- * @author torr
+ * @author StandTrooper
  * @since Mar 19, 2010 - 11:41:15 AM
  */
 public class TabbedLayout extends BaseLayout {

@@ -52,7 +52,6 @@ import android.os.Bundle;
  * @since 16Mar2010
  */
 public class FireflySoundboard extends Activity {
-
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
