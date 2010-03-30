@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/about"
+          android:title="@string/about_label"
+          android:icon="@android:drawable/ic_menu_info_details"/>
+    <item android:id="@+id/settings"
+          android:title="@string/settings_label"
+          android:icon="@drawable/compass"/>
+    <item android:id="@+id/AllSoundsMenu"
+          android:title="@string/AllSounds"/>
+    <item android:id="@+id/MalMenu"
+          android:title="@string/Mal"/>
+    <item android:id="@+id/ZoeMenu"
+          android:title="@string/Zoe"/>
+    <item android:id="@+id/JayneMenu"
+          android:title="@string/Jayne"/>
+    <item android:id="@+id/WashMenu"
+          android:title="@string/Wash"/>
+    <item android:id="@+id/JubalEarlyMenu"
+          android:title="@string/JubalEarly"/>
+    <item android:id="@+id/KayleeMenu"
+          android:title="@string/Kaylee"/>
+    <item android:id="@+id/RiverMenu"
+          android:title="@string/River"/>
+    <item android:id="@+id/SimonMenu"
+          android:title="@string/Simon"/>
+    <item android:id="@+id/BookMenu"
+          android:title="@string/Book"/>
+    <!--<item android:id="@+id/MrUniverseMenu" android:title="@string/MrUniverse" />-->
+    <item android:id="@+id/InaraMenu"
+          android:title="@string/Inara"/>
+    <!--<item android:id="@+id/TheOperativeMenu" android:title="@string/TheOperative" />-->
+
+    <item android:id="@+id/quit"
+          android:title="@string/quit_label"
+          android:icon="@android:drawable/ic_menu_close_clear_cancel"/>
+</menu>

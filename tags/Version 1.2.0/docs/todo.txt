@@ -1,0 +1,10 @@
+1) when orientation is changed, don't reset the view
+    - should be as simple as putting a static view id, then if the id is -1 when the app starts then check to see if
+        the new value is there, if not then load all the sounds again
+2) make the app database driven
+    - see if the app runs slower or not
+        - if not slower, then keep the changes
+        - if slower, then rollback
+        - basically, to avoid duplication of code, can do sql calls to save some of that...don't know if the overhead
+            will kill the app tho
+3) find more sounds
