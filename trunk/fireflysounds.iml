@@ -3,7 +3,7 @@
   <component name="FacetManager">
     <facet type="android" name="Android">
       <configuration>
-        <option name="PLATFORM_NAME" value="Android 2.1 Platform" />
+        <option name="PLATFORM_NAME" value="Android 1.5 Google APIs" />
         <option name="USE_CUSTOM_GEN_FOLDER" value="false" />
         <option name="CUSTOM_GEN_FOLDER_RELATIVE_PATH" value="" />
       </configuration>
@@ -21,52 +21,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Android 1.5 Platform" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="Android 1.5 Google APIs" level="application" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/autoandroidlib-src-1.0-rc5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/android-ant-1.0-rc5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/autoandroidlib-1.0-rc5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/autoandroidlib-javadoc-1.0-rc5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/positron-1.0-rc5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="Android 2.1 Platform" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="Android 1.5 Google APIs" level="application" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">
