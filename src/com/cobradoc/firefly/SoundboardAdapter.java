@@ -42,6 +42,7 @@ import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -108,7 +109,8 @@ public class SoundboardAdapter extends BaseAdapter {
                     public boolean onLongClick(final View view) {
                         Log.e("soundboard adapter", "pressed the longen clicken");
                         saveas(sample);
-                        Toast.makeText(context, "You have saved the sound " + sample.getName(), Toast.LENGTH_LONG).show();
+
+                        Toast.makeText(context, Html.fromHtml("You have saved the sound <b>"+ sample.getName() + "</b>"), Toast.LENGTH_LONG).show();
                         return false;
                     }
                 });
