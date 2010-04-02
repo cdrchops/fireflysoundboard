@@ -37,6 +37,11 @@ public class AllSounds extends Soundboard {
         addSample("Pain is scary", R.raw.scare);
         addSample("Horses are steak", R.raw.steak);
         addSample("aim to misbehave", R.raw.aimtomisbehave);
+        addSample("Dirtnap outtake", R.raw.dirtnap);
+        addSample("I will end you", R.raw.iwillendyou);
+        addSample("Pretty Floral Bonnet", R.raw.prettyfloralbonnet);
+        addSample("Take you seriously", R.raw.seriouslytoamiddle);
+        addSample("spacecowboy", R.raw.spacecowboy);
 
         //Wash
         addSample("we're being followed", R.raw.alarm);
@@ -48,7 +53,9 @@ public class AllSounds extends Soundboard {
         addSample("Complete This Land", R.raw.thislandcomplete);
         addSample("We shall call this land", R.raw.thisland);
         addSample("inevitable betrayal", R.raw.betrayal);
-
+        addSample("Manly Fashion", R.raw.manlyfashion);
+        addSample("Manly Fashion whole", R.raw.manlyfashionwhole);
+        
         //Early
         addSample("Put the gun away", R.raw.away);
         addSample("nonsensical crap", R.raw.boat);
@@ -75,6 +82,10 @@ public class AllSounds extends Soundboard {
         addSample("don't like people hearin what I'm thinkin", R.raw.thinking);
         addSample("She's a witch", R.raw.witch);
         addSample("I'll be in my bunk", R.raw.inmybunk);
+        addSample("i call it vera", R.raw.icallitvera);
+        addSample("Powerful ugly", R.raw.powerfuluglycreature);
+        addSample("Make you prettier", R.raw.prettier);
+        addSample("take me seriously", R.raw.takemeseriously);
 
         //River
         addSample("very crowded", R.raw.crowded);
@@ -101,5 +112,7 @@ public class AllSounds extends Soundboard {
         addSample("Half a hump", R.raw.putyou);
 
         addSample("Firefly theme song", R.raw.theme);
+        addSample("Fruity Oaty Bar", R.raw.fruityoatybar);
+        addSample("Vera whole", R.raw.verawhole);
     }
 }

@@ -41,5 +41,7 @@ public class Wash extends Soundboard {
         addSample("Complete This Land", R.raw.thislandcomplete);
         addSample("We shall call this land", R.raw.thisland);
         addSample("inevitable betrayal", R.raw.betrayal);
+        addSample("Manly Fashion", R.raw.manlyfashion);
+        addSample("Manly Fashion whole", R.raw.manlyfashionwhole);
     }
 }
