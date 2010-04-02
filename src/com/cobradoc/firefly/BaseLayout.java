@@ -12,17 +12,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.GridView;
-import com.cobradoc.firefly.board.AllSounds;
-import com.cobradoc.firefly.board.Book;
-import com.cobradoc.firefly.board.Inara;
-import com.cobradoc.firefly.board.Jayne;
-import com.cobradoc.firefly.board.JubalEarly;
-import com.cobradoc.firefly.board.Kaylee;
-import com.cobradoc.firefly.board.Mal;
-import com.cobradoc.firefly.board.River;
-import com.cobradoc.firefly.board.Simon;
-import com.cobradoc.firefly.board.Wash;
-import com.cobradoc.firefly.board.Zoe;
+import com.cobradoc.firefly.board.*;
 
 /**
  * @author torr
@@ -152,6 +142,10 @@ public class BaseLayout extends Activity {
             case R.id.InaraMenu:
                 playerValue = R.id.InaraMenu;
                 createGrid(new Inara());
+                return true;
+            case R.id.MiscMenu:
+                playerValue = R.id.MiscMenu;
+                createGrid(new Misc());
                 return true;
             //         case R.id.TheOperativeMenu:
 //            playerValue = R.id.TheOperativeMenu;

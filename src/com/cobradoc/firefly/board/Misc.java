@@ -25,25 +25,14 @@ import com.cobradoc.firefly.Soundboard;
  * @author StandTrooper
  * @since Mar 17, 2010 - 11:46:37 AM
  */
-public class Mal extends Soundboard {
-
-    public Mal() {
-        super("Malcom Reynolds");
+public class Misc extends Soundboard {
+    public Misc() {
+        super("Miscellaneous");
     }
 
     public void initialize() {
-        addSample("This is a bad idea", R.raw.badidea);
-        addSample("No touching guns", R.raw.guns);
-        addSample("Big Damn Heroes", R.raw.heroes);
-        addSample("Jayne's got a job to do", R.raw.job);
-        addSample("We're gonna die", R.raw.pretty);
-        addSample("Pain is scary", R.raw.scare);
-        addSample("Horses are steak", R.raw.steak);
-        addSample("aim to misbehave", R.raw.aimtomisbehave);
-        addSample("Dirtnap outtake", R.raw.dirtnap);
-        addSample("I will end you", R.raw.iwillendyou);
-        addSample("Pretty Floral Bonnet", R.raw.prettyfloralbonnet);
-        addSample("Take you seriously", R.raw.seriouslytoamiddle);
-        addSample("spacecowboy", R.raw.spacecowboy);
+        addSample("Firefly theme song", R.raw.theme);
+        addSample("Fruity Oaty Bar", R.raw.fruityoatybar);
+        addSample("Vera whole", R.raw.verawhole);
     }
 }

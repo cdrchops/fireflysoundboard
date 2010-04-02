@@ -22,5 +22,9 @@ public class LandscapeTab7 extends Soundboard {
         addSample("inevitable betrayal", R.raw.betrayal);
         addSample("aim to misbehave", R.raw.aimtomisbehave);
         addSample("I'll be in my bunk", R.raw.inmybunk);
+        addSample("Dirtnap outtake", R.raw.dirtnap);
+        addSample("Fruity Oaty Bar", R.raw.fruityoatybar);
+        addSample("i call it vera", R.raw.icallitvera);
+        addSample("I will end you", R.raw.iwillendyou);
     }
 }

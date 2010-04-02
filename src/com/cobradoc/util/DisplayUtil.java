@@ -6,10 +6,10 @@ package com.cobradoc.util;
 
 import android.app.Activity;
 import android.content.res.Configuration;
-import android.view.Display;
+//import android.view.Display;
 
 /**
- * @author torr
+ * @author StandTrooper
  * @since Mar 19, 2010 - 10:58:35 PM
  */
 public class DisplayUtil {
