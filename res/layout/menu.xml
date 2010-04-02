@@ -29,6 +29,8 @@
     <!--<item android:id="@+id/MrUniverseMenu" android:title="@string/MrUniverse" />-->
     <item android:id="@+id/InaraMenu"
           android:title="@string/Inara"/>
+    <item android:id="@+id/MiscMenu"
+          android:title="@string/Misc"/>
     <!--<item android:id="@+id/TheOperativeMenu" android:title="@string/TheOperative" />-->
 
     <item android:id="@+id/quit"
