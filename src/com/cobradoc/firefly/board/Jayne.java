@@ -39,5 +39,9 @@ public class Jayne extends Soundboard {
         addSample("don't like people hearin what I'm thinkin", R.raw.thinking);
         addSample("She's a witch", R.raw.witch);
         addSample("I'll be in my bunk", R.raw.inmybunk);
+        addSample("i call it vera", R.raw.icallitvera);
+        addSample("Powerful ugly", R.raw.powerfuluglycreature);
+        addSample("Make you prettier", R.raw.prettier);
+        addSample("take me seriously", R.raw.takemeseriously);        
     }
 }
