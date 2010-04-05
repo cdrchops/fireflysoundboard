@@ -1,0 +1,47 @@
+/*
+ * Firefly Soundboard - a soundboard for Firefly and Serenity.
+ *
+ * Copyright (c) 2010 Tim Orr aka StandTrooper
+ *
+ * This program is free software: you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or (at your
+ * option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the GNU General
+ * Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+package com.cobradoc.firefly.board;
+
+import com.cobradoc.firefly.R;
+import com.cobradoc.firefly.Soundboard;
+
+/**
+ * @author StandTrooper
+ * @since Mar 17, 2010 - 11:46:37 AM
+ */
+public class Jayne extends Soundboard {
+
+    public Jayne() {
+        super("Jayne Cobb");
+    }
+
+    public void initialize() {
+        addSample("Kaylee cheerful", R.raw.cheerful);
+        addSample("Not Jaynes fault", R.raw.fault);
+        addSample("can't get paid if you're dead", R.raw.nothing);
+        addSample("Saint Jayne", R.raw.saintjayne);
+        addSample("don't like people hearin what I'm thinkin", R.raw.thinking);
+        addSample("She's a witch", R.raw.witch);
+        addSample("I'll be in my bunk", R.raw.inmybunk);
+        addSample("i call it vera", R.raw.icallitvera);
+        addSample("Powerful ugly", R.raw.powerfuluglycreature);
+        addSample("Make you prettier", R.raw.prettier);
+        addSample("take me seriously", R.raw.takemeseriously);        
+    }
+}

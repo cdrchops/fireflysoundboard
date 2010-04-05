@@ -38,6 +38,7 @@ public final class R {
         public static final int tab4=0x7f060018;
         public static final int tab5=0x7f060019;
         public static final int tab6=0x7f06001a;
+        public static final int tab7=0x7f06001b;
         public static final int tabbedButton=0x7f060013;
         public static final int tabbedLayout=0x7f060012;
         public static final int tabhost=0x7f060014;
