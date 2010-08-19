@@ -113,6 +113,9 @@ public class BaseLayout extends Activity {
             case R.id.about:
                 startActivity(new Intent(this, About.class));
                 return true;
+            case R.id.alert:
+                Settings.showAlert(this);
+                return true;
             case R.id.quit:
                 finish();
                 return true;
