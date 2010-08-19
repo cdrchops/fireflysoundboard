@@ -38,8 +38,18 @@
 package com.cobradoc.firefly;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.*;
 
 /**
  * This class and code borrows heavily from the Zappenduster soundboard I was headed in the same direction when I found
@@ -55,11 +65,6 @@ public class FireflySoundboard extends Activity {
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if (Settings.isTabbedLayout && Settings.showTabOptions) {
-            startActivity(new Intent(this, TabbedLayout.class));
-        } else {
-            startActivity(new Intent(this, MainLayout.class));
-        }
+        Settings.startup(this);
     }
 }
