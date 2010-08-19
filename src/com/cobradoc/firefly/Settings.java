@@ -19,9 +19,12 @@
 package com.cobradoc.firefly;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -56,5 +59,56 @@ public class Settings extends Activity {
                 startActivity(new Intent(context, FireflySoundboard.class));
             }
         });
+    }
+
+    private static String getMessage() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Press and hold any sound to save it to your phone<br><br>")
+          .append("Using the menu button on your phone will bring up more things you can do<br><br>")
+          .append("Press and hold any sound to save it to your phone<br><br>")
+          .append("Using the menu button on your phone will bring up more things you can do<br><br>")
+          .append("Press and hold any sound to save it to your phone<br><br>")
+          .append("Using the menu button on your phone will bring up more things you can do<br><br>")
+          .append("You have saved the sound <b>THIS IS IT</b>");
+        return sb.toString();
+    }
+
+    public static void showAlert(Context context) {
+        new AlertDialog.Builder(context)
+            .setTitle("What is new?")
+            .setMessage(Html.fromHtml(getMessage()))
+            .setNeutralButton("Close", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dlg, int sumthin) {
+                    // do nothing -- it will close on its own
+                }
+            })
+            .show();
+    }
+
+    static boolean isFirst = true;
+    public static void startup(final Context context) {
+        if (isFirst) {
+        new AlertDialog.Builder(context)
+            .setTitle("What is new?")
+            .setMessage(Html.fromHtml(getMessage()))
+            .setNeutralButton("Close", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dlg, int sumthin) {
+                    // do nothing -- it will close on its own
+                    isFirst = false;
+                    startIt(context);
+                }
+            })
+            .show();
+        } else {
+            startIt(context);
+        }
+    }
+
+    private static void startIt(Context context) {
+        if (Settings.isTabbedLayout && Settings.showTabOptions) {
+            context.startActivity(new Intent(context, TabbedLayout.class));
+        } else {
+            context.startActivity(new Intent(context, MainLayout.class));
+        }
     }
 }
